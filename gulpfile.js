@@ -7,7 +7,7 @@ var LessPluginCleanCSS = require('less-plugin-clean-css'),
     LessPluginAutoPrefix = require('less-plugin-autoprefix'),
     cleancss = new LessPluginCleanCSS({ advanced: true }),
     autoprefix= new LessPluginAutoPrefix({ browsers: ["last 2 versions"] });
-/*var removeHtmlComments = require('gulp-remove-html-comments');*/
+
 var htmlclean = require('gulp-htmlclean');
 var concat = require('gulp-concat');
 
