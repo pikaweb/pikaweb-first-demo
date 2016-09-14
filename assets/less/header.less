@@ -1,0 +1,81 @@
+.header {
+  background-image: url(../img/header-bg.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 800px;
+  position: relative;
+  &-content {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+    &__title {
+      font-family: lato, sans-serif; 
+      font-size: 7rem;      
+      text-transform: uppercase;
+      -webkit-margin-before: 0em;
+      -webkit-margin-after: 0em;
+    }
+    &__subtitle {
+      font-family: 'Times New Roman', Georgia, Times, serif;
+      font-size: 2.5rem;
+      font-weight: 600;
+      font-style: italic;
+      opacity: .7;
+    }
+    &__btn {
+      margin: 25px 0px;
+      padding: 22px 80px;
+      font-family: lato, sans-serif; 
+      font-size: 1.2rem;
+      font-weight: 500;
+      letter-spacing: 1px;    
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #fff;
+      border: 2px solid #fff;
+      border-radius: 2px;
+      display: inline-block;
+      transition: .35s;
+      &:hover {
+        background-color: rgba(255,255,255,0.3);
+        transition: .35s;
+      }
+    }
+    &__send-recipes {
+      font-size: 1rem;
+    }
+    &__link {
+      color: #fff;
+      transition: .35s;
+      &:hover {
+        color: darken(#fff, 15%);
+        transition: .35s;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    &-content {
+      top: 50%;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    &-content {
+      &__title {
+        font-size: 5rem;   
+      }
+      &__subtitle {
+        font-size: 2rem;
+      }
+    }
+  }
+}

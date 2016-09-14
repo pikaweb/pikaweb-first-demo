@@ -1,0 +1,65 @@
+.cuisines {  
+  &__title {
+    margin: 100px 0px 50px;
+    font-family: lato, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    &::after {
+      content: '';
+      margin: 10px auto;
+      width: 85px;
+      height: 1px;
+      background-color: #f57365;
+      display: block;
+    }
+  }
+  &__container {
+    margin: 0 auto;
+    width: 1600px;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.cuisine { 
+  background-repeat: no-repeat;
+  background-size: cover;  
+  min-width: 310px;
+  width: 20%;
+  height: 225px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  transition: .15s;
+  &__recipes-quantity {
+    font-family: 'Times New Roman', Georgia, Times, serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 1px;
+    color: #fff;
+  }
+  &__name {
+    padding: 5px;
+    font-family: lato, sans-serif;
+    font-size: 2.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+  }
+  &:hover {
+    -webkit-filter: brightness(110%);
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' ><filter i…e='linear' slope='1.25' /></feComponentTransfer></filter></svg>#bright125");
+    filter: brightness(110%);
+    transition: .3s;
+    cursor: pointer;
+  }
+}
